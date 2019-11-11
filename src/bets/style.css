@@ -1,0 +1,56 @@
+.root {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Myriad Pro Light";
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-pref-width: 123px;
+    -fx-background-radius: 10px;
+    -fx-background-color: dodgerblue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-pref-width: 123px;
+    -fx-background-radius: 10px;
+    -fx-background-color: skyblue;
+    -fx-text-fill: white;
+}
+
+#profileBtn {
+    -fx-pref-width: 123px;
+    -fx-background-radius: 10px;
+    -fx-background-color: limegreen;
+    -fx-text-fill: white;
+}
+
+#profileBtn:hover {
+    -fx-pref-width: 123px;
+    -fx-background-radius: 10px;
+    -fx-background-color: lightgreen;
+    -fx-text-fill: white;
+}
+
+#userCircle {
+    -fx-fill: lightgray;
+    -fx-stroke: lightgray;
+}
+
+#circleText {
+    -fx-font-size: 48px;
+    -fx-font-family: inherit;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#tokenText {
+    -fx-font-size: 48px;
+    -fx-font-family: inherit;
+}
+
+#fieldLabel {
+    -fx-font-weight: bold;
+}
+

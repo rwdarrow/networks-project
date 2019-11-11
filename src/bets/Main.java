@@ -1,5 +1,6 @@
 package bets;
 
+import com.sun.javafx.css.StyleManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,12 +11,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("userScene.fxml"));
+        primaryStage.setTitle("Energy Marketplace");
+        Application.setUserAgentStylesheet(null);
+
+        StyleManager.getInstance().addUserAgentStylesheet("src/bets/style.css");
+
+        primaryStage.setResizable(false);
+        primaryStage.setScene(new Scene(root, 829, 550));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
